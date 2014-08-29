@@ -1,0 +1,651 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		82A24F6218F1E74400DC3178 /* faceBase.png in Resources */ = {isa = PBXBuildFile; fileRef = 82A24F5C18F1E74400DC3178 /* faceBase.png */; };
+		82A24F6318F1E74400DC3178 /* faceBlinkEyes.png in Resources */ = {isa = PBXBuildFile; fileRef = 82A24F5D18F1E74400DC3178 /* faceBlinkEyes.png */; };
+		82A24F6418F1E74400DC3178 /* faceGunDam01.png in Resources */ = {isa = PBXBuildFile; fileRef = 82A24F5E18F1E74400DC3178 /* faceGunDam01.png */; };
+		82A24F6518F1E74400DC3178 /* faceMouth.png in Resources */ = {isa = PBXBuildFile; fileRef = 82A24F5F18F1E74400DC3178 /* faceMouth.png */; };
+		82A24F6618F1E74400DC3178 /* faceOpenClose.png in Resources */ = {isa = PBXBuildFile; fileRef = 82A24F6018F1E74400DC3178 /* faceOpenClose.png */; };
+		82A24F6718F1E74400DC3178 /* faceOpenEyes.png in Resources */ = {isa = PBXBuildFile; fileRef = 82A24F6118F1E74400DC3178 /* faceOpenEyes.png */; };
+		82AC38A218F1AF2E00A10113 /* Digital_tech.otf in Resources */ = {isa = PBXBuildFile; fileRef = 82AC38A118F1AF2E00A10113 /* Digital_tech.otf */; };
+		82EDC01A18F0C99500583083 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82EDC01918F0C99500583083 /* Foundation.framework */; };
+		82EDC01C18F0C99500583083 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82EDC01B18F0C99500583083 /* CoreGraphics.framework */; };
+		82EDC01E18F0C99500583083 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82EDC01D18F0C99500583083 /* UIKit.framework */; };
+		82EDC02418F0C99500583083 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 82EDC02218F0C99500583083 /* InfoPlist.strings */; };
+		82EDC02618F0C99500583083 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EDC02518F0C99500583083 /* main.m */; };
+		82EDC02A18F0C99500583083 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EDC02918F0C99500583083 /* AppDelegate.m */; };
+		82EDC02D18F0C99500583083 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82EDC02B18F0C99500583083 /* Main.storyboard */; };
+		82EDC03018F0C99500583083 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EDC02F18F0C99500583083 /* ViewController.m */; };
+		82EDC03218F0C99500583083 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82EDC03118F0C99500583083 /* Images.xcassets */; };
+		82EDC03918F0C99500583083 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82EDC03818F0C99500583083 /* XCTest.framework */; };
+		82EDC03A18F0C99500583083 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82EDC01918F0C99500583083 /* Foundation.framework */; };
+		82EDC03B18F0C99500583083 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82EDC01D18F0C99500583083 /* UIKit.framework */; };
+		82EDC04318F0C99500583083 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 82EDC04118F0C99500583083 /* InfoPlist.strings */; };
+		82EDC04518F0C99500583083 /* TACTICONTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EDC04418F0C99500583083 /* TACTICONTests.m */; };
+		82EDC05018F0C9E000583083 /* robotController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EDC04F18F0C9E000583083 /* robotController.m */; };
+		82EDC06218F0C9FD00583083 /* background2layer.png in Resources */ = {isa = PBXBuildFile; fileRef = 82EDC05118F0C9FD00583083 /* background2layer.png */; };
+		82EDC06318F0C9FD00583083 /* backgroundController.png in Resources */ = {isa = PBXBuildFile; fileRef = 82EDC05218F0C9FD00583083 /* backgroundController.png */; };
+		82EDC06418F0C9FD00583083 /* enRing1.png in Resources */ = {isa = PBXBuildFile; fileRef = 82EDC05318F0C9FD00583083 /* enRing1.png */; };
+		82EDC06518F0C9FD00583083 /* enRing2.png in Resources */ = {isa = PBXBuildFile; fileRef = 82EDC05418F0C9FD00583083 /* enRing2.png */; };
+		82EDC06618F0C9FD00583083 /* leftBtu.png in Resources */ = {isa = PBXBuildFile; fileRef = 82EDC05518F0C9FD00583083 /* leftBtu.png */; };
+		82EDC06718F0C9FD00583083 /* reSetRing.png in Resources */ = {isa = PBXBuildFile; fileRef = 82EDC05618F0C9FD00583083 /* reSetRing.png */; };
+		82EDC06818F0C9FD00583083 /* rightBtu.png in Resources */ = {isa = PBXBuildFile; fileRef = 82EDC05718F0C9FD00583083 /* rightBtu.png */; };
+		82EDC06918F0C9FD00583083 /* sideRing1.png in Resources */ = {isa = PBXBuildFile; fileRef = 82EDC05818F0C9FD00583083 /* sideRing1.png */; };
+		82EDC06A18F0C9FD00583083 /* sideRing2.png in Resources */ = {isa = PBXBuildFile; fileRef = 82EDC05918F0C9FD00583083 /* sideRing2.png */; };
+		82EDC06B18F0C9FD00583083 /* sideRing3.png in Resources */ = {isa = PBXBuildFile; fileRef = 82EDC05A18F0C9FD00583083 /* sideRing3.png */; };
+		82EDC06C18F0C9FD00583083 /* sideRing4.png in Resources */ = {isa = PBXBuildFile; fileRef = 82EDC05B18F0C9FD00583083 /* sideRing4.png */; };
+		82EDC06D18F0C9FD00583083 /* sideRing5.png in Resources */ = {isa = PBXBuildFile; fileRef = 82EDC05C18F0C9FD00583083 /* sideRing5.png */; };
+		82EDC06E18F0C9FD00583083 /* spinCen1.png in Resources */ = {isa = PBXBuildFile; fileRef = 82EDC05D18F0C9FD00583083 /* spinCen1.png */; };
+		82EDC06F18F0C9FD00583083 /* spinCen2.png in Resources */ = {isa = PBXBuildFile; fileRef = 82EDC05E18F0C9FD00583083 /* spinCen2.png */; };
+		82EDC07018F0C9FD00583083 /* spinCen3.png in Resources */ = {isa = PBXBuildFile; fileRef = 82EDC05F18F0C9FD00583083 /* spinCen3.png */; };
+		82EDC07118F0C9FD00583083 /* spinCen4.png in Resources */ = {isa = PBXBuildFile; fileRef = 82EDC06018F0C9FD00583083 /* spinCen4.png */; };
+		82EDC07218F0C9FD00583083 /* tcLOGO60-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 82EDC06118F0C9FD00583083 /* tcLOGO60-120.png */; };
+		82EDC07418F0D25F00583083 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82EDC07318F0D25F00583083 /* GameKit.framework */; };
+		82EDC07618F0D26800583083 /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82EDC07518F0D26800583083 /* MultipeerConnectivity.framework */; };
+		82EDC07818F0D27100583083 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82EDC07718F0D27100583083 /* AudioToolbox.framework */; };
+		82EDC07A18F0D27900583083 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82EDC07918F0D27900583083 /* AVFoundation.framework */; };
+		82EDC07C18F0D28300583083 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82EDC07B18F0D28300583083 /* CoreMotion.framework */; };
+		82EDC07E18F0D28E00583083 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82EDC07D18F0D28E00583083 /* CoreBluetooth.framework */; };
+		82EDC08318F0D3E500583083 /* BLE.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EDC08118F0D3E500583083 /* BLE.m */; };
+		82EDC08518F0F5EB00583083 /* Digit.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 82EDC08418F0EFE800583083 /* Digit.TTF */; };
+		82FC20F818F3014200E89849 /* gunBase.png in Resources */ = {isa = PBXBuildFile; fileRef = 82FC20F618F3014200E89849 /* gunBase.png */; };
+		82FC20F918F3014200E89849 /* gunSlider.png in Resources */ = {isa = PBXBuildFile; fileRef = 82FC20F718F3014200E89849 /* gunSlider.png */; };
+		82FC20FB18F3098800E89849 /* barreta_m9.wav in Resources */ = {isa = PBXBuildFile; fileRef = 82FC20FA18F3098800E89849 /* barreta_m9.wav */; };
+		82FC210018F309AD00E89849 /* offline.wav in Resources */ = {isa = PBXBuildFile; fileRef = 82FC20FC18F309AD00E89849 /* offline.wav */; };
+		82FC210118F309AD00E89849 /* online.wav in Resources */ = {isa = PBXBuildFile; fileRef = 82FC20FD18F309AD00E89849 /* online.wav */; };
+		82FC210218F309AD00E89849 /* shotgun-reload.wav in Resources */ = {isa = PBXBuildFile; fileRef = 82FC20FE18F309AD00E89849 /* shotgun-reload.wav */; };
+		82FC210318F309AD00E89849 /* update-complete.wav in Resources */ = {isa = PBXBuildFile; fileRef = 82FC20FF18F309AD00E89849 /* update-complete.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		82EDC03C18F0C99500583083 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82EDC00E18F0C99500583083 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82EDC01518F0C99500583083;
+			remoteInfo = TACTICON;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		82A24F5C18F1E74400DC3178 /* faceBase.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = faceBase.png; sourceTree = "<group>"; };
+		82A24F5D18F1E74400DC3178 /* faceBlinkEyes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = faceBlinkEyes.png; sourceTree = "<group>"; };
+		82A24F5E18F1E74400DC3178 /* faceGunDam01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = faceGunDam01.png; sourceTree = "<group>"; };
+		82A24F5F18F1E74400DC3178 /* faceMouth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = faceMouth.png; sourceTree = "<group>"; };
+		82A24F6018F1E74400DC3178 /* faceOpenClose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = faceOpenClose.png; sourceTree = "<group>"; };
+		82A24F6118F1E74400DC3178 /* faceOpenEyes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = faceOpenEyes.png; sourceTree = "<group>"; };
+		82AC38A118F1AF2E00A10113 /* Digital_tech.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Digital_tech.otf; sourceTree = "<group>"; };
+		82EDC01618F0C99500583083 /* TACTICON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TACTICON.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		82EDC01918F0C99500583083 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		82EDC01B18F0C99500583083 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		82EDC01D18F0C99500583083 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		82EDC02118F0C99500583083 /* TACTICON-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TACTICON-Info.plist"; sourceTree = "<group>"; };
+		82EDC02318F0C99500583083 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		82EDC02518F0C99500583083 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		82EDC02718F0C99500583083 /* TACTICON-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TACTICON-Prefix.pch"; sourceTree = "<group>"; };
+		82EDC02818F0C99500583083 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		82EDC02918F0C99500583083 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		82EDC02C18F0C99500583083 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		82EDC02E18F0C99500583083 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		82EDC02F18F0C99500583083 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		82EDC03118F0C99500583083 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		82EDC03718F0C99500583083 /* TACTICONTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TACTICONTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		82EDC03818F0C99500583083 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		82EDC04018F0C99500583083 /* TACTICONTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TACTICONTests-Info.plist"; sourceTree = "<group>"; };
+		82EDC04218F0C99500583083 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		82EDC04418F0C99500583083 /* TACTICONTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TACTICONTests.m; sourceTree = "<group>"; };
+		82EDC04E18F0C9E000583083 /* robotController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = robotController.h; sourceTree = "<group>"; };
+		82EDC04F18F0C9E000583083 /* robotController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = robotController.m; sourceTree = "<group>"; };
+		82EDC05118F0C9FD00583083 /* background2layer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background2layer.png; sourceTree = "<group>"; };
+		82EDC05218F0C9FD00583083 /* backgroundController.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundController.png; sourceTree = "<group>"; };
+		82EDC05318F0C9FD00583083 /* enRing1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enRing1.png; sourceTree = "<group>"; };
+		82EDC05418F0C9FD00583083 /* enRing2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enRing2.png; sourceTree = "<group>"; };
+		82EDC05518F0C9FD00583083 /* leftBtu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftBtu.png; sourceTree = "<group>"; };
+		82EDC05618F0C9FD00583083 /* reSetRing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reSetRing.png; sourceTree = "<group>"; };
+		82EDC05718F0C9FD00583083 /* rightBtu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rightBtu.png; sourceTree = "<group>"; };
+		82EDC05818F0C9FD00583083 /* sideRing1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sideRing1.png; sourceTree = "<group>"; };
+		82EDC05918F0C9FD00583083 /* sideRing2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sideRing2.png; sourceTree = "<group>"; };
+		82EDC05A18F0C9FD00583083 /* sideRing3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sideRing3.png; sourceTree = "<group>"; };
+		82EDC05B18F0C9FD00583083 /* sideRing4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sideRing4.png; sourceTree = "<group>"; };
+		82EDC05C18F0C9FD00583083 /* sideRing5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sideRing5.png; sourceTree = "<group>"; };
+		82EDC05D18F0C9FD00583083 /* spinCen1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spinCen1.png; sourceTree = "<group>"; };
+		82EDC05E18F0C9FD00583083 /* spinCen2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spinCen2.png; sourceTree = "<group>"; };
+		82EDC05F18F0C9FD00583083 /* spinCen3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spinCen3.png; sourceTree = "<group>"; };
+		82EDC06018F0C9FD00583083 /* spinCen4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spinCen4.png; sourceTree = "<group>"; };
+		82EDC06118F0C9FD00583083 /* tcLOGO60-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tcLOGO60-120.png"; sourceTree = "<group>"; };
+		82EDC07318F0D25F00583083 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		82EDC07518F0D26800583083 /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
+		82EDC07718F0D27100583083 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		82EDC07918F0D27900583083 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		82EDC07B18F0D28300583083 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		82EDC07D18F0D28E00583083 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		82EDC08018F0D3E500583083 /* BLE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLE.h; sourceTree = "<group>"; };
+		82EDC08118F0D3E500583083 /* BLE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLE.m; sourceTree = "<group>"; };
+		82EDC08218F0D3E500583083 /* BLEDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEDefines.h; sourceTree = "<group>"; };
+		82EDC08418F0EFE800583083 /* Digit.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = Digit.TTF; sourceTree = "<group>"; };
+		82FC20F618F3014200E89849 /* gunBase.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gunBase.png; sourceTree = "<group>"; };
+		82FC20F718F3014200E89849 /* gunSlider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gunSlider.png; sourceTree = "<group>"; };
+		82FC20FA18F3098800E89849 /* barreta_m9.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = barreta_m9.wav; path = ../../EX4/EX4/barreta_m9.wav; sourceTree = "<group>"; };
+		82FC20FC18F309AD00E89849 /* offline.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = offline.wav; sourceTree = "<group>"; };
+		82FC20FD18F309AD00E89849 /* online.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = online.wav; sourceTree = "<group>"; };
+		82FC20FE18F309AD00E89849 /* shotgun-reload.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "shotgun-reload.wav"; sourceTree = "<group>"; };
+		82FC20FF18F309AD00E89849 /* update-complete.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "update-complete.wav"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		82EDC01318F0C99500583083 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82EDC07E18F0D28E00583083 /* CoreBluetooth.framework in Frameworks */,
+				82EDC07C18F0D28300583083 /* CoreMotion.framework in Frameworks */,
+				82EDC07A18F0D27900583083 /* AVFoundation.framework in Frameworks */,
+				82EDC07818F0D27100583083 /* AudioToolbox.framework in Frameworks */,
+				82EDC07618F0D26800583083 /* MultipeerConnectivity.framework in Frameworks */,
+				82EDC07418F0D25F00583083 /* GameKit.framework in Frameworks */,
+				82EDC01C18F0C99500583083 /* CoreGraphics.framework in Frameworks */,
+				82EDC01E18F0C99500583083 /* UIKit.framework in Frameworks */,
+				82EDC01A18F0C99500583083 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82EDC03418F0C99500583083 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82EDC03918F0C99500583083 /* XCTest.framework in Frameworks */,
+				82EDC03B18F0C99500583083 /* UIKit.framework in Frameworks */,
+				82EDC03A18F0C99500583083 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		82EDC00D18F0C99500583083 = {
+			isa = PBXGroup;
+			children = (
+				82EDC01F18F0C99500583083 /* TACTICON */,
+				82EDC03E18F0C99500583083 /* TACTICONTests */,
+				82EDC01818F0C99500583083 /* Frameworks */,
+				82EDC01718F0C99500583083 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		82EDC01718F0C99500583083 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82EDC01618F0C99500583083 /* TACTICON.app */,
+				82EDC03718F0C99500583083 /* TACTICONTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		82EDC01818F0C99500583083 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				82EDC07F18F0D3E500583083 /* BLE_Framework */,
+				82EDC07D18F0D28E00583083 /* CoreBluetooth.framework */,
+				82EDC07B18F0D28300583083 /* CoreMotion.framework */,
+				82EDC07918F0D27900583083 /* AVFoundation.framework */,
+				82EDC07718F0D27100583083 /* AudioToolbox.framework */,
+				82EDC07518F0D26800583083 /* MultipeerConnectivity.framework */,
+				82EDC07318F0D25F00583083 /* GameKit.framework */,
+				82EDC01918F0C99500583083 /* Foundation.framework */,
+				82EDC01B18F0C99500583083 /* CoreGraphics.framework */,
+				82EDC01D18F0C99500583083 /* UIKit.framework */,
+				82EDC03818F0C99500583083 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		82EDC01F18F0C99500583083 /* TACTICON */ = {
+			isa = PBXGroup;
+			children = (
+				82EDC02818F0C99500583083 /* AppDelegate.h */,
+				82EDC02918F0C99500583083 /* AppDelegate.m */,
+				82EDC02B18F0C99500583083 /* Main.storyboard */,
+				82EDC02E18F0C99500583083 /* ViewController.h */,
+				82EDC02F18F0C99500583083 /* ViewController.m */,
+				82EDC04E18F0C9E000583083 /* robotController.h */,
+				82EDC04F18F0C9E000583083 /* robotController.m */,
+				82EDC03118F0C99500583083 /* Images.xcassets */,
+				82EDC02018F0C99500583083 /* Supporting Files */,
+			);
+			path = TACTICON;
+			sourceTree = "<group>";
+		};
+		82EDC02018F0C99500583083 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				82AC38A118F1AF2E00A10113 /* Digital_tech.otf */,
+				82EDC08418F0EFE800583083 /* Digit.TTF */,
+				82EDC05118F0C9FD00583083 /* background2layer.png */,
+				82EDC05218F0C9FD00583083 /* backgroundController.png */,
+				82EDC05318F0C9FD00583083 /* enRing1.png */,
+				82EDC05418F0C9FD00583083 /* enRing2.png */,
+				82EDC05518F0C9FD00583083 /* leftBtu.png */,
+				82FC20FA18F3098800E89849 /* barreta_m9.wav */,
+				82EDC05618F0C9FD00583083 /* reSetRing.png */,
+				82EDC05718F0C9FD00583083 /* rightBtu.png */,
+				82EDC05818F0C9FD00583083 /* sideRing1.png */,
+				82EDC05918F0C9FD00583083 /* sideRing2.png */,
+				82EDC05A18F0C9FD00583083 /* sideRing3.png */,
+				82FC20FC18F309AD00E89849 /* offline.wav */,
+				82FC20FD18F309AD00E89849 /* online.wav */,
+				82FC20FE18F309AD00E89849 /* shotgun-reload.wav */,
+				82FC20FF18F309AD00E89849 /* update-complete.wav */,
+				82EDC05B18F0C9FD00583083 /* sideRing4.png */,
+				82EDC05C18F0C9FD00583083 /* sideRing5.png */,
+				82EDC05D18F0C9FD00583083 /* spinCen1.png */,
+				82EDC05E18F0C9FD00583083 /* spinCen2.png */,
+				82EDC05F18F0C9FD00583083 /* spinCen3.png */,
+				82EDC06018F0C9FD00583083 /* spinCen4.png */,
+				82EDC06118F0C9FD00583083 /* tcLOGO60-120.png */,
+				82FC20F618F3014200E89849 /* gunBase.png */,
+				82FC20F718F3014200E89849 /* gunSlider.png */,
+				82A24F5C18F1E74400DC3178 /* faceBase.png */,
+				82A24F5D18F1E74400DC3178 /* faceBlinkEyes.png */,
+				82A24F5E18F1E74400DC3178 /* faceGunDam01.png */,
+				82A24F5F18F1E74400DC3178 /* faceMouth.png */,
+				82A24F6018F1E74400DC3178 /* faceOpenClose.png */,
+				82A24F6118F1E74400DC3178 /* faceOpenEyes.png */,
+				82EDC02118F0C99500583083 /* TACTICON-Info.plist */,
+				82EDC02218F0C99500583083 /* InfoPlist.strings */,
+				82EDC02518F0C99500583083 /* main.m */,
+				82EDC02718F0C99500583083 /* TACTICON-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		82EDC03E18F0C99500583083 /* TACTICONTests */ = {
+			isa = PBXGroup;
+			children = (
+				82EDC04418F0C99500583083 /* TACTICONTests.m */,
+				82EDC03F18F0C99500583083 /* Supporting Files */,
+			);
+			path = TACTICONTests;
+			sourceTree = "<group>";
+		};
+		82EDC03F18F0C99500583083 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				82EDC04018F0C99500583083 /* TACTICONTests-Info.plist */,
+				82EDC04118F0C99500583083 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		82EDC07F18F0D3E500583083 /* BLE_Framework */ = {
+			isa = PBXGroup;
+			children = (
+				82EDC08018F0D3E500583083 /* BLE.h */,
+				82EDC08118F0D3E500583083 /* BLE.m */,
+				82EDC08218F0D3E500583083 /* BLEDefines.h */,
+			);
+			path = BLE_Framework;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		82EDC01518F0C99500583083 /* TACTICON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82EDC04818F0C99500583083 /* Build configuration list for PBXNativeTarget "TACTICON" */;
+			buildPhases = (
+				82EDC01218F0C99500583083 /* Sources */,
+				82EDC01318F0C99500583083 /* Frameworks */,
+				82EDC01418F0C99500583083 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TACTICON;
+			productName = TACTICON;
+			productReference = 82EDC01618F0C99500583083 /* TACTICON.app */;
+			productType = "com.apple.product-type.application";
+		};
+		82EDC03618F0C99500583083 /* TACTICONTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82EDC04B18F0C99500583083 /* Build configuration list for PBXNativeTarget "TACTICONTests" */;
+			buildPhases = (
+				82EDC03318F0C99500583083 /* Sources */,
+				82EDC03418F0C99500583083 /* Frameworks */,
+				82EDC03518F0C99500583083 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				82EDC03D18F0C99500583083 /* PBXTargetDependency */,
+			);
+			name = TACTICONTests;
+			productName = TACTICONTests;
+			productReference = 82EDC03718F0C99500583083 /* TACTICONTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		82EDC00E18F0C99500583083 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Jomkwan ";
+				TargetAttributes = {
+					82EDC03618F0C99500583083 = {
+						TestTargetID = 82EDC01518F0C99500583083;
+					};
+				};
+			};
+			buildConfigurationList = 82EDC01118F0C99500583083 /* Build configuration list for PBXProject "TACTICON" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 82EDC00D18F0C99500583083;
+			productRefGroup = 82EDC01718F0C99500583083 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				82EDC01518F0C99500583083 /* TACTICON */,
+				82EDC03618F0C99500583083 /* TACTICONTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		82EDC01418F0C99500583083 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82EDC08518F0F5EB00583083 /* Digit.TTF in Resources */,
+				82A24F6318F1E74400DC3178 /* faceBlinkEyes.png in Resources */,
+				82A24F6618F1E74400DC3178 /* faceOpenClose.png in Resources */,
+				82FC210118F309AD00E89849 /* online.wav in Resources */,
+				82A24F6418F1E74400DC3178 /* faceGunDam01.png in Resources */,
+				82EDC06E18F0C9FD00583083 /* spinCen1.png in Resources */,
+				82EDC06D18F0C9FD00583083 /* sideRing5.png in Resources */,
+				82EDC03218F0C99500583083 /* Images.xcassets in Resources */,
+				82EDC02418F0C99500583083 /* InfoPlist.strings in Resources */,
+				82EDC06718F0C9FD00583083 /* reSetRing.png in Resources */,
+				82EDC06A18F0C9FD00583083 /* sideRing2.png in Resources */,
+				82FC210018F309AD00E89849 /* offline.wav in Resources */,
+				82EDC06318F0C9FD00583083 /* backgroundController.png in Resources */,
+				82FC20F918F3014200E89849 /* gunSlider.png in Resources */,
+				82FC210318F309AD00E89849 /* update-complete.wav in Resources */,
+				82FC210218F309AD00E89849 /* shotgun-reload.wav in Resources */,
+				82EDC07118F0C9FD00583083 /* spinCen4.png in Resources */,
+				82EDC06218F0C9FD00583083 /* background2layer.png in Resources */,
+				82A24F6218F1E74400DC3178 /* faceBase.png in Resources */,
+				82EDC07018F0C9FD00583083 /* spinCen3.png in Resources */,
+				82EDC06618F0C9FD00583083 /* leftBtu.png in Resources */,
+				82EDC06C18F0C9FD00583083 /* sideRing4.png in Resources */,
+				82EDC06418F0C9FD00583083 /* enRing1.png in Resources */,
+				82A24F6718F1E74400DC3178 /* faceOpenEyes.png in Resources */,
+				82EDC06F18F0C9FD00583083 /* spinCen2.png in Resources */,
+				82EDC02D18F0C99500583083 /* Main.storyboard in Resources */,
+				82EDC06818F0C9FD00583083 /* rightBtu.png in Resources */,
+				82FC20F818F3014200E89849 /* gunBase.png in Resources */,
+				82FC20FB18F3098800E89849 /* barreta_m9.wav in Resources */,
+				82A24F6518F1E74400DC3178 /* faceMouth.png in Resources */,
+				82EDC06918F0C9FD00583083 /* sideRing1.png in Resources */,
+				82EDC07218F0C9FD00583083 /* tcLOGO60-120.png in Resources */,
+				82EDC06B18F0C9FD00583083 /* sideRing3.png in Resources */,
+				82AC38A218F1AF2E00A10113 /* Digital_tech.otf in Resources */,
+				82EDC06518F0C9FD00583083 /* enRing2.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82EDC03518F0C99500583083 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82EDC04318F0C99500583083 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		82EDC01218F0C99500583083 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82EDC03018F0C99500583083 /* ViewController.m in Sources */,
+				82EDC02A18F0C99500583083 /* AppDelegate.m in Sources */,
+				82EDC05018F0C9E000583083 /* robotController.m in Sources */,
+				82EDC08318F0D3E500583083 /* BLE.m in Sources */,
+				82EDC02618F0C99500583083 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82EDC03318F0C99500583083 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82EDC04518F0C99500583083 /* TACTICONTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		82EDC03D18F0C99500583083 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 82EDC01518F0C99500583083 /* TACTICON */;
+			targetProxy = 82EDC03C18F0C99500583083 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		82EDC02218F0C99500583083 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82EDC02318F0C99500583083 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		82EDC02B18F0C99500583083 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82EDC02C18F0C99500583083 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		82EDC04118F0C99500583083 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82EDC04218F0C99500583083 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		82EDC04618F0C99500583083 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		82EDC04718F0C99500583083 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		82EDC04918F0C99500583083 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TACTICON/TACTICON-Prefix.pch";
+				INFOPLIST_FILE = "TACTICON/TACTICON-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		82EDC04A18F0C99500583083 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TACTICON/TACTICON-Prefix.pch";
+				INFOPLIST_FILE = "TACTICON/TACTICON-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		82EDC04C18F0C99500583083 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TACTICON.app/TACTICON";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TACTICON/TACTICON-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TACTICONTests/TACTICONTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		82EDC04D18F0C99500583083 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TACTICON.app/TACTICON";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TACTICON/TACTICON-Prefix.pch";
+				INFOPLIST_FILE = "TACTICONTests/TACTICONTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		82EDC01118F0C99500583083 /* Build configuration list for PBXProject "TACTICON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82EDC04618F0C99500583083 /* Debug */,
+				82EDC04718F0C99500583083 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82EDC04818F0C99500583083 /* Build configuration list for PBXNativeTarget "TACTICON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82EDC04918F0C99500583083 /* Debug */,
+				82EDC04A18F0C99500583083 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82EDC04B18F0C99500583083 /* Build configuration list for PBXNativeTarget "TACTICONTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82EDC04C18F0C99500583083 /* Debug */,
+				82EDC04D18F0C99500583083 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 82EDC00E18F0C99500583083 /* Project object */;
+}
